@@ -1,18 +1,9 @@
 public class Main {
+
     public static void main(String[] args) {
-        WildTurkey turkey = new WildTurkey();
+        Duck turkeyAdapter = new TurkeyClassAdapter();
 
-
-        Duck turkeyAdapter = new TurkeyAdapter(turkey);
-
-        System.out.println("The Turkey says...");
-        turkey.gobble();
-        turkey.fly();
-
-        System.out.println("\nThe Duck says...");
-        testDuck(new MallardDuck());
-
-        System.out.println("\nThe TurkeyAdapter says...");
+        System.out.println("The TurkeyAdapter says...");
         testDuck(turkeyAdapter);
     }
 
